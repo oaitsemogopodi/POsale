@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--End of css-->
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sapphire-pos</title>
+
+     <!--favicon-->
+    <link rel="shortcut icon" href="img/pos-log.jpg">
+     <!--End of favicon-->
+     <style>
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        }
+        
+        body{
+          background-image: url('img/pos.jpg');
+        }
+     </style>
+  </head>
+  <body>
+    <!--Navigation bar-->
+       <section>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <img src="img/pos-log.jpg" alt="" height="50">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Username" aria-label="Username">
+                <input class="form-control me-2" type="search" placeholder="Password" aria-label="Password">
+                <button class="btn btn-outline-warning" type="submit">Submit</button>
+              </form>
+            </div>
+          </nav>
+       </section>
+    <!--End of navigation bar-->
+
+    <!--About section-->
+    <section >
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="accordion" id="accordionExample" style="background-color: transparent;">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Package 1
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error repellendus repudiandae enim voluptate dolor quas incidunt dicta, culpa recusandae at.</small>
+                            </div>
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Package 1</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Package 2
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nostrum totam iure a, quia recusandae hic quos. Ipsam, iste magnam!</small>
+                            </div>
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Package 2</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Package 3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus at dicta odio facere! Ut esse deserunt nemo atque possimus ab!</small>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Package 3</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-white">
+                  <h1>Point of Sale</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, similique!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime nesciunt ipsa impedit in veritatis iste ipsum ut eveniet nam.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta vero dignissimos voluptatem eveniet?</p>
+              </div>
+            </div>
+        </div>
+        <!--Modal pop up-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Proceed</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <main class="form-signin">
+                        <form>
+                            <img class="mb-4" src="img/pos-log.jpg" alt="" width="72" height="57">
+                            <h1 class="h3 mb-3 fw-normal">PLEASE SIGN UP</h1>
+                    
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                                <label for="floatingInput">Business name</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="country" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Proceed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--End of About section-->
+
+    <!--Footer section-->
+    <section>
+        <footer class="footer p-5 mt-2 fixed-bottom" style="position: fixed;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 text-white">
+                        <h3>Contact Info</h3>
+                        <small>71472964</small><br>
+                        <small>oaiitsemogopodi@gmail.com</small>
+                    </div>
+                    <div class="col-lg-4 text-white">
+                       <h3>Location</h3>
+                       <small>Tlokweng</small><br>
+                       <small>Botswana</small>
+                    </div>
+                    <div class="col-lg-4">
+                      <h3 class="text-white">Social Icons</h3>
+                      <small class="text-white">Facebook</small><br>
+                      <small class="text-white">Instagram</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--end of footer-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
